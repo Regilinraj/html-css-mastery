@@ -4,7 +4,7 @@ Small projects I built to learn HTML and CSS by hand.
 
 | Project | Live link |
 |---|---|
-| 01 Profile Page |  https://regilinraj.github.io/html-css-mastery/|
+| 01 Profile Page |  https://regilinraj.github.io/html-css-mastery/01-html-profile-page/|
 
 ## How to run locally
 1. Download the ZIP or clone the repo.
