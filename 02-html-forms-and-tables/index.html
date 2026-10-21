@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Personal Details</legend>
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter you name" required minlength="3" maxlength="40">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" requird minlength="8">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="60" value="20">
+
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter 10 digits">
+
+
+    </fieldset>
+
+        <fieldset>
+      <legend>Preferences</legend>
+
+      <p class="group-title">Gender</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="gender" value="female"> Female</label>
+        <label class="option"><input type="radio" name="gender" value="male"> Male</label>
+      </div>
+
+      <p class="group-title">Interests</p>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="interest" value="html" checked> HTML</label>
+        <label class="option"><input type="checkbox" name="interest" value="css"> CSS</label>
+        <label class="option"><input type="checkbox" name="interest" value="python"> Python</label>
+      </div>
+
+      <label for="course">Course</label>
+      <select id="course" name="course">
+        <option value="">-- Select --</option>
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+        <option value="ece">ECE</option>
+      </select>
+
+      <label for="msg">About You</label>
+      <textarea id="msg" name="msg" rows="4" placeholder="Write something..."></textarea>
+
+      <label for="photo">Upload Photo</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+    </fieldset>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+
+    </form>
+
+    <h2>Weekly Timetable</h2>
+
+    <table>
+        <caption>Class timetable</caption>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9-11 AM</th>
+                <th>11-1 PM</th>
+                <th>2-4 PM</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mon</td>
+                <td>Python</td>
+                <td>HTML</td>
+                <td>Lab</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>CSS</td>
+                <td colspan="2">Project work</td>
+            </tr>
+
+            <tr>
+                <td>Wed</td>
+                <td rowspan="2">Seminar</td>
+                <td>JS</td>
+                <td>Lab</td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>SQL</td>
+                <td>Django</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Friday:Exercise only!</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
